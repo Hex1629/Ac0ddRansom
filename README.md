@@ -1,6 +1,6 @@
 ## Ransomware Builder Python (Windows)
 
-<img src="https://img.shields.io/github/v/tag/hectorm/hblock?label=version">
+<img src="https://github.com/Hex1629/Ransomware-Builder-Python-Windows/">
 
 ## Encryption Support!!!!
 
