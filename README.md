@@ -1,7 +1,7 @@
 ## Ransomware Builder Python (Windows)
 
 ## Encryption Support!!!!
-##  [+] Fernet Base64
+[+] Fernet Base64
 
 
 ## Where Decryptor?
