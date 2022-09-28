@@ -19,7 +19,9 @@
  windows (download zip or git)
  liunx,termux (git)
 
+```sh
 #How To Run???
 
  windows (open cmd,run cd to Ransomware Builder folder and python ransomware_builder.py)
  windows (cd to Ransomware Builder folder and python ransomware_builder.py)
+```
