@@ -1,8 +1,13 @@
         /)
+        
    .-"".L,""-.
+   
   ;       :.  :
+  
   (       7:  )
+  
    :         ;
+   
     "..-"-.."
 
 ## Ransomware Builder Python (Windows)
