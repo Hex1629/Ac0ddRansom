@@ -1,6 +1,6 @@
 <p align="center">
-  <a href="">
-    <img src="" width="320" height="320">
+  <a href="https://github.com/Hex1629/Ransomware-Builder-Python-Windows">
+    <img src="https://github.com/Hex1629/Ransomware-Builder-Python-Windows/blob/main/Ransomware_Builder.jpg" width="320" height="320">
   </a>
 </p>
 
