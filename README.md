@@ -25,6 +25,13 @@ Ransomware Builder Note
  [!] windows (download zip or git)
  [!] liunx,termux (git)
  ```
+ 
+ ## UPDATE NOW
+
+```sh
+FIX CODE GET ENCRYPT DATA IN BUILDER RANSOMWARE 
+MAKE FILE RANSOMWARE BUILDER SMALL
+ ```
 
 
 ## How To Run???
