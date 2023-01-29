@@ -29,7 +29,8 @@ Ransomware Builder Note
  ## UPDATE NOW
 
 ```sh
-FIX BUG FOLDER a b f n r t v python saw \a \b \f \n \r \t \v
+NEW METHODS TO LOCK FILE > WIPER WIPER_FILE
+WIPER_FILE LOAD NOTE ENCRYPT FROM YOU FILE
  ```
 
 
