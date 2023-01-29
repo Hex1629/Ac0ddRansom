@@ -29,8 +29,7 @@ Ransomware Builder Note
  ## UPDATE NOW
 
 ```sh
-FIX CODE GET ENCRYPT DATA IN BUILDER RANSOMWARE 
-MAKE FILE RANSOMWARE BUILDER SMALL
+FIX BUG FOLDER a b f n r t v python saw \a \b \f \n \r \t \v
  ```
 
 
