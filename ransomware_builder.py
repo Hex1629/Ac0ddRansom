@@ -24,13 +24,13 @@ if code_path == '1':
 if code_path == '2':
     print("Desktop , Downloads , Appdata or etc")
     code_path = input('Path:')
-    code_path = f"os.environ['USERPROFILE'] + '\{code_path}'"
+    code_path = f"os.environ['USERPROFILE'] + '/{code_path}'"
 if code_path == '3':
     print("Desktop , Downloads , Appdata or etc")
     code_path = input('Path:')
     print(f"folder in {code_path}")
     code_path2 = input('Path2:')
-    code_path = f"os.environ['USERPROFILE'] + '\{code_path}\{code_path2}'"
+    code_path = f"os.environ['USERPROFILE'] + '/{code_path}/{code_path2}'"
 code_1 = input('File Extension:')
 print("Fernet,Fernet_ReEncryption,base,Fernet_base,Fernet_ReEncryption_base")
 code_2 = input('Encryption:')
