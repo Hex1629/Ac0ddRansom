@@ -1,3 +1,4 @@
+print("There is not have decrypt bc lazy")
 import os,random
 print(f"""
             .-""-.
